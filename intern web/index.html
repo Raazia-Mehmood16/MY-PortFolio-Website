@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raazia's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="is-preload">
+
+    <div class="preview-bar">
+        <span class="preview-label">Preview:</span>
+        <div class="preview-buttons" id="previewButtons">
+            <button data-view="desktop" class="active">Desktop</button>
+            <button data-view="tablet">Tablet</button>
+            <button data-view="tabletPortrait">Tablet Portrait</button>
+            <button data-view="mobile">Mobile</button>
+        </div>
+    </div>
+
+    <div id="site-container">
+
+        <!-- HEADER -->
+        <header class="site-header" id="siteHeader">
+            <div class="header-inner">
+                <a href="index.html" class="brand">Raazia<span class="brand-dot">.</span></a>
+                <nav class="nav-links" id="navLinks">
+                    <a href="#intro" class="nav-link">Intro</a>
+                    <a href="#about" class="nav-link">Who I Am</a>
+                    <a href="#services" class="nav-link">What I Do</a>
+                    <a href="#work" class="nav-link">My Work</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="resume.pdf" download class="resume-btn">Resume</a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="dot-rail" id="dotRail" aria-label="Section navigation">
+            <a href="#intro" class="dot" data-label="Intro"></a>
+            <a href="#about" class="dot" data-label="Who I Am"></a>
+            <a href="#services" class="dot" data-label="What I Do"></a>
+            <a href="#work" class="dot" data-label="My Work"></a>
+            <a href="#experience" class="dot" data-label="Experience"></a>
+            <a href="#contact" class="dot" data-label="Contact"></a>
+        </nav>
+
+        <!-- INTRO -->
+        <section class="page" id="intro">
+            <div class="page-bg" style="background-image:url('p1.jfif');"></div>
+            <div class="page-content from-bottom">
+                <span class="eyebrow">Portfolio</span>
+                <h1>Hey, I'm <strong>Raazia Mehmood</strong>.</h1>
+                <p>
+                    A <strong>Computer Science Student</strong> at FAST University with a passion for
+                    <strong>C++</strong>, <strong>Python</strong>, and <strong>Web Development</strong>.
+                    Currently working as a <strong>Backend Engineering Intern at FlyRank</strong>.
+                </p>
+                <a href="#about" class="next-btn">Discover My Journey <span class="arrow">↓</span></a>
+            </div>
+        </section>
+
+        <!-- WHO I AM -->
+        <section class="page anchor-right" id="about">
+            <div class="page-bg" style="background-image:url('p2.jfif');"></div>
+            <div class="page-content panel from-right">
+                <span class="eyebrow">Who I Am</span>
+                <h1>About Me</h1>
+                <p>
+                    I am a Computer Science student at FAST University, passionate about
+                    technology, problem-solving, and continuous learning. My primary focus
+                    areas include C++, Python, and Web Development. I enjoy transforming
+                    ideas into practical software solutions while continuously improving my
+                    technical and analytical skills through academic projects, personal
+                    projects, and professional experience.
+                </p>
+                <a href="#services" class="next-btn">Learn More About Me <span class="arrow">↓</span></a>
+            </div>
+        </section>
+
+        <!-- WHAT I DO -->
+        <section class="page anchor-left" id="services">
+            <div class="page-bg" style="background-image:url('p3.jfif');"></div>
+            <div class="page-content panel from-left">
+                <span class="eyebrow">What I Do</span>
+                <h1>Skills &amp; Expertise</h1>
+                <p>
+                    Focused on <strong>Frontend Development</strong>,
+                    <strong>Dealing with cyber Attacks</strong>,
+                    and <strong>Software Engineering</strong>.
+                    Experienced with modern development tools and technologies.
+                </p><br>
+                <h4>Skills</h4><br>
+                <ul>
+                    <li>C & C++</li>
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Java & JavaScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>Frontend & Backend Development</li>
+                    <li>SQL Database Fundamentals & Assembly Language</li>
+                    <li>AI & ML (intermediate)</li>
+                </ul>
+                <a href="#work" class="next-btn">See my work <span class="arrow">↓</span></a>
+            </div>
+        </section>
+
+        <!-- MY WORK -->
+        <section class="page page-work" id="work">
+            <div class="page-bg" style="background-image:url('p4.jfif');"></div>
+            <div class="page-content from-bottom">
+                <span class="eyebrow">My Work</span>
+                <h1>Projects</h1>
+                <p>
+                    A collection of projects showcasing my skills in
+                    <strong>Programming</strong>,
+                    <strong>Web Development</strong>,
+                    and <strong>Problem Solving</strong>.
+                    Visit My LinkedIn to explore more.
+                </p>
+            </div>
+
+            <div class="project-grid" id="projectGrid">
+
+                <a href="p1.html?id=1" class="project-card">
+                    <video class="project-video" src="p1.mp4" poster="p01.png" muted loop playsinline></video>
+                    <div class="project-card-overlay">
+                        <span class="play-icon">▶</span>
+                        <span class="project-name">P1 Atari Breakout Game</span>
+                    </div>
+                </a>
+
+                <a href="p2.html?id=2" class="project-card">
+                    <video class="project-video" src="p2.mp4" poster="p02.jfif" muted loop playsinline></video>
+                    <div class="project-card-overlay">
+                        <span class="play-icon">▶</span>
+                        <span class="project-name">P2 FiFA Player Prediction Model</span>
+                    </div>
+                </a>
+
+                <a href="p3.html?id=3" class="project-card">
+                    <video class="project-video" src="p3.mp4" poster="p03.jfif" muted loop playsinline></video>
+                    <div class="project-card-overlay">
+                        <span class="play-icon">▶</span>
+                        <span class="project-name">P3 Data Structures Visualizer</span>
+                    </div>
+                </a>
+
+                <a href="p4.html?id=4" class="project-card">
+                    <video class="project-video" src="p4.mp4" poster="p04.jfif" muted loop playsinline></video>
+                    <div class="project-card-overlay">
+                        <span class="play-icon">▶</span>
+                        <span class="project-name">P4 Adventure Quest Game OOP</span>
+                    </div>
+                </a>
+
+                <a href="p5.html?id=5" class="project-card">
+                    <video class="project-video" src="p5.mp4" poster="p05.jfif" muted loop playsinline></video>
+                    <div class="project-card-overlay">
+                        <span class="play-icon">▶</span>
+                        <span class="project-name">P5 Currency Converter</span>
+                    </div>
+                </a>
+
+                <a href="p6.html?id=6" class="project-card">
+                    <video class="project-video" src="p6.mp4" poster="p06.jfif" muted loop playsinline></video>
+                    <div class="project-card-overlay">
+                        <span class="play-icon">▶</span>
+                        <span class="project-name">P6 Student Management System C++</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <a href="#experience" class="next-btn bottom-next">My experience <span class="arrow">↓</span></a>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="page anchor-right" id="experience">
+            <div class="page-bg" style="background-image:url('p5.jfif');"></div>
+            <div class="page-content panel from-right">
+                <span class="eyebrow">Experience</span>
+                <h1>Experience</h1>
+                <p>
+                    <strong>Backend Engineering Intern</strong> at
+                    <strong>FlyRank</strong>,
+                    gaining hands-on experience in real-world software development and backend systems.
+                </p>
+                <a href="#contact" class="next-btn">Get in touch <span class="arrow">↓</span></a>
+            </div>
+        </section>
+
+        <!-- CONTACT — padding-top added so content never hides behind fixed header -->
+        <section class="page" id="contact">
+            <div class="page-bg" style="background-image:url('p6.jfif');"></div>
+            <div class="page-content from-bottom contact-content">
+                <span class="eyebrow">Contact</span>
+                <h1>Let's Talk</h1>
+                <p>Have a project in mind? Scroll down and send a message — I read every one.</p>
+                <p>
+                    Open to <strong>internships</strong>,
+                    <strong>collaborations</strong>,
+                    and exciting opportunities in technology.
+                </p>
+                <a href="#feedbackForm" class="next-btn">Say hello <span class="arrow">↓</span></a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer-section">
+            <div class="footer-container">
+
+                <div class="footer-left">
+                    <h2>Let's Connect</h2>
+                    <p>Have a project idea, feedback, or just want to say hello? I'd love to hear from you.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/raazia-mehmood-221995324" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Raazia-Mehmood16" target="_blank">GitHub</a>
+                        <a href="mailto:raziamehmood168@gmail.com">Email</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <form id="feedbackForm">
+                        <h3>Submit Feedback</h3>
+                        <input type="text" id="name" placeholder="Your Name">
+                        <small class="error" id="nameError"></small>
+                        <input type="email" id="email" placeholder="Your Email">
+                        <small class="error" id="emailError"></small>
+                        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                        <small class="error" id="messageError"></small>
+                        <div class="rating-section">
+                            <p>Rate Your Experience</p>
+                            <div class="stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <small class="error" id="ratingError"></small>
+                        </div>
+                        <button type="submit">Submit Feedback</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- FOOTER BOTTOM BAR -->
+            <div class="footer-bottom">
+                <nav class="footer-links">
+                    <a href="#intro">Intro</a>
+                    <a href="#about">Who I Am</a>
+                    <a href="#services">What I Do</a>
+                    <a href="#work">My Work</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://www.linkedin.com/in/raazia-mehmood-221995324">LinkedIn</a>
+                    <a href="https://github.com/Raazia-Mehmood16">GitHub</a>
+                    <a href="mailto:raziamehmood168@gmail.com">Email</a>
+                </nav>
+                <p class="footer-copy">© 2026 Raazia Mehmood. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- POPUP -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>Thank You!</h2>
+                <p>Your feedback has been submitted successfully.</p>
+                <button onclick="closePopup()">Close</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="projects-data.js"></script>
+    <script src="scripit.js"></script>
+</body>
+</html>
